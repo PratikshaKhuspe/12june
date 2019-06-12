@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.flex-container>div {
+  height: 135px;
+  width:33%;
+  background-color: powderblue;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 15px;
+  text-align: center;
+  font-size: 35px;
+  color: Indigo;
+  text-shadow:  6px 6px white;
+  background-image: url("bg.jpeg");
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 450px; /* only for demonstration, should be removed */
+  background: LightCoral;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img{
+  float: right;
+}
+button{
+  height: 35px;
+  margin-bottom: 16px;
+  width: 45%;
+  background-color:BurlyWood ;
+}
+
+/* Style the footer */
+footer {
+  background-color: LawnGreen;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2><b>Bollywood stars Info<b></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <button><a href="#">HOME</a></button><br><br>
+      <button><a href="#">About as</a></button><br><br>
+      <button><a href="#">testimination</a></button><br><br>
+      <button><a href="#">Contact us</a></button><br><br>
+    </ul>
+  </nav>
+
+  <article>
+    <div class="flex-container">
+
+  <div><p>Dhanush's first film was Thulluvadho Ilamai, a 2002 coming-of-age film directed by his father, Kasthuri Raja. Over the last 15 years, Dhanush has starred in over 25 films. </p></div>
+    <div><p>Maari is a 2015 Indian Tamil language action comedy film written and directed by Balaji Mohan starring Dhanush and Kajal Aggarwal</p></div>
+    <div></p><img src="mari.jpg" height="120" width="200"></p></div>
+    <div style="background-color:pink"><p >Hruta Duragule is originally from Ratnagiri, but she was raised in mumbai.Her education was completed at the Ruia college.</p></div>
+    <div style="background-color:pink"><p> <img src="hruta.jpeg" height="100" width="200"></p></div>
+    <div style="background-color:pink"></p>Durva on star pravaha was her first serial & hruta just was 18 years old. She enterd the zee yuva serial named phulpakhru.</p></div>
+    <div style="background-color:Orange"><p> <img src="akshy.jpeg" height="100" width="200"></p></div>
+    <div style="background-color:Orange"><p>Kumar is one of the most prolific actors of Indian cinema, having starred in 110 films,[3] including 29 commercially successful films.</p></div>
+    <div style="background-color:Orange"><p>The following year, Kumar played dual role in Umesh Mehra-directed action thriller, Sabse Bada Khiladi, which was a commercial success</p></div>
+
+</div>  </article>
+</section>
+
+<footer>
+  <p>CopyRight Reasons@<sup> tm</sup></p>
+</footer>
+
+</body>
+</html>
